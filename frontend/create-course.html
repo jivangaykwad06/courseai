@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Create Course - CourseAI</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/create-course.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="dashboard.html"
+       class="logo">
+        🤖 CourseAI
+    </a>
+
+    <nav>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="profile.html">
+            Profile
+        </a>
+
+        <button class="logoutBtn">
+            Logout
+        </button>
+
+    </nav>
+
+</header>
+
+<main class="create-page">
+
+    <div class="create-header">
+
+        <span class="badge">
+            🤖 AI COURSE BUILDER
+        </span>
+
+        <h1>
+            Create Your Course
+        </h1>
+
+        <p>
+            Tell Gemini what you want to learn.
+            CourseAI will generate the complete
+            course dynamically.
+        </p>
+
+    </div>
+
+    <form
+        id="courseForm"
+        class="course-form">
+
+        <div class="form-group">
+
+            <label>
+                Course Title *
+            </label>
+
+            <input
+                type="text"
+                id="courseTitle"
+                placeholder="Example: Python Programming"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>
+                Category *
+            </label>
+
+            <input
+                type="text"
+                id="category"
+                placeholder="Example: Programming"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>
+                Difficulty *
+            </label>
+
+            <select
+                id="difficulty"
+                required>
+
+                <option value="Beginner">
+                    Beginner
+                </option>
+
+                <option value="Intermediate">
+                    Intermediate
+                </option>
+
+                <option value="Advanced">
+                    Advanced
+                </option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>
+                Learning Duration *
+            </label>
+
+            <input
+                type="text"
+                id="duration"
+                placeholder="Example: 4 weeks"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>
+                Number of Chapters *
+            </label>
+
+            <input
+                type="number"
+                id="chapters"
+                min="1"
+                max="30"
+                value="8"
+                required>
+
+        </div>
+
+        <div class="form-group full">
+
+            <label>
+                Additional Requirements
+            </label>
+
+            <textarea
+                id="requirements"
+                rows="6"
+                placeholder="Tell AI what you want included..."></textarea>
+
+        </div>
+
+        <button
+            id="generateBtn"
+            type="submit"
+            class="primary-btn generate-btn">
+
+            ✨ Generate Course with AI
+
+        </button>
+
+        <div
+            id="generationLoading"
+            class="generation-loading">
+
+            <div class="spinner"></div>
+
+            <h3>
+                Gemini AI is creating your course...
+            </h3>
+
+            <p>
+                Creating chapters, lessons,
+                examples and quizzes.
+            </p>
+
+        </div>
+
+    </form>
+
+</main>
+
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/create-course.js"></script>
+
+</body>
+</html>

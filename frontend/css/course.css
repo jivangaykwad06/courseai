@@ -1,0 +1,310 @@
+.course-page {
+    max-width: 1300px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.course-header {
+    background: white;
+
+    border: 1px solid var(--border);
+    border-radius: 20px;
+
+    padding: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    margin-bottom: 25px;
+
+    box-shadow: var(--shadow);
+}
+
+.course-header h1 {
+    font-size: 38px;
+    margin: 10px 0;
+}
+
+.course-header p {
+    color: var(--muted);
+    max-width: 800px;
+}
+
+.course-layout {
+    display: grid;
+
+    grid-template-columns:
+        280px
+        1fr;
+
+    gap: 25px;
+
+    align-items: start;
+}
+
+.course-sidebar {
+    background: white;
+
+    border: 1px solid var(--border);
+    border-radius: 16px;
+
+    padding: 20px;
+
+    position: sticky;
+    top: 95px;
+}
+
+.course-sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.chapter-item {
+    width: 100%;
+
+    border: 1px solid var(--border);
+    background: white;
+
+    border-radius: 10px;
+
+    padding: 12px;
+
+    margin-bottom: 9px;
+
+    text-align: left;
+}
+
+.chapter-item span {
+    display: block;
+
+    color: var(--primary);
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.chapter-item strong {
+    display: block;
+    margin-top: 3px;
+}
+
+.chapter-item.active {
+    background: #eef2ff;
+    border-color: #a5b4fc;
+}
+
+.lesson-area {
+    min-width: 0;
+}
+
+.chapter-info {
+    margin-bottom: 20px;
+}
+
+.chapter-info > span {
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.chapter-info h2 {
+    font-size: 30px;
+    margin: 5px 0;
+}
+
+.chapter-info p {
+    color: var(--muted);
+}
+
+.lesson-card {
+    background: white;
+
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    padding: 30px;
+
+    box-shadow: var(--shadow);
+}
+
+.lesson-card h2,
+.lesson-card h3 {
+    margin-bottom: 15px;
+}
+
+.lesson-text {
+    line-height: 1.85;
+}
+
+.examples-section {
+    margin-top: 30px;
+
+    padding: 20px;
+
+    background: #f8faff;
+
+    border-radius: 14px;
+}
+
+.quiz-section {
+    margin-top: 25px;
+
+    background: white;
+
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    padding: 25px;
+
+    box-shadow: var(--shadow);
+}
+
+.quiz-section h2 {
+    margin-bottom: 20px;
+}
+
+.quiz-question {
+    margin-bottom: 25px;
+}
+
+.quiz-question h3 {
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.quiz-options {
+    display: grid;
+    gap: 8px;
+}
+
+.quiz-options label {
+    display: flex;
+    gap: 10px;
+
+    padding: 12px;
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.quiz-options label:hover {
+    background: #f8faff;
+}
+
+.quiz-result {
+    margin-top: 18px;
+
+    padding: 15px;
+
+    background: #eef2ff;
+
+    border-radius: 10px;
+}
+
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.profile-page {
+    max-width: 700px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.profile-card {
+    background: white;
+
+    border: 1px solid var(--border);
+    border-radius: 20px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow);
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+
+    display: grid;
+    place-items: center;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background: #eef2ff;
+
+    font-size: 35px;
+}
+
+.profile-card h1 {
+    margin-top: 15px;
+}
+
+.profile-card > p {
+    color: var(--muted);
+}
+
+.profile-card hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 30px 0;
+}
+
+.profile-info {
+    display: grid;
+    gap: 8px;
+    text-align: left;
+}
+
+.profile-info label {
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.profile-info input {
+    padding: 13px;
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+@media (max-width: 850px) {
+
+    .course-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .course-sidebar {
+        position: static;
+    }
+
+    .course-header {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .course-header h1 {
+        font-size: 30px;
+    }
+
+    .lesson-navigation {
+        flex-direction: column;
+    }
+
+    .lesson-navigation button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Course - CourseAI</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/course.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="dashboard.html"
+       class="logo">
+        🤖 CourseAI
+    </a>
+
+    <nav>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="create-course.html">
+            Create Course
+        </a>
+
+        <button class="logoutBtn">
+            Logout
+        </button>
+
+    </nav>
+
+</header>
+
+<main class="course-page">
+
+    <section class="course-header">
+
+        <div>
+
+            <span id="courseCategory"
+                  class="course-category">
+            </span>
+
+            <h1 id="courseTitle">
+                Loading course...
+            </h1>
+
+            <p id="courseDescription"></p>
+
+            <div class="course-meta">
+
+                <span>
+                    🎯
+                    <strong id="courseDifficulty">
+                    </strong>
+                </span>
+
+                <span>
+                    ⏱️
+                    <strong id="courseDuration">
+                    </strong>
+                </span>
+
+            </div>
+
+        </div>
+
+        <button
+            id="downloadPdfBtn"
+            class="secondary-btn">
+            📄 Download Course PDF
+        </button>
+
+    </section>
+
+    <div class="course-layout">
+
+        <aside class="course-sidebar">
+
+            <h2>
+                Course Content
+            </h2>
+
+            <div
+                id="chapterList">
+            </div>
+
+        </aside>
+
+        <section class="lesson-area">
+
+            <div class="chapter-info">
+
+                <span>
+                    CHAPTER
+                </span>
+
+                <h2 id="chapterTitle"></h2>
+
+                <p id="chapterDescription"></p>
+
+            </div>
+
+            <article
+                id="lessonContent"
+                class="lesson-card">
+
+            </article>
+
+            <div
+                id="quizContainer">
+            </div>
+
+            <div class="lesson-navigation">
+
+                <button
+                    id="previousLessonBtn"
+                    class="secondary-btn">
+                    ← Previous
+                </button>
+
+                <button
+                    id="markCompleteBtn"
+                    class="primary-btn">
+                    ✓ Mark as Complete
+                </button>
+
+                <button
+                    id="nextLessonBtn"
+                    class="secondary-btn">
+                    Next →
+                </button>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/course.js"></script>
+
+</body>
+</html>

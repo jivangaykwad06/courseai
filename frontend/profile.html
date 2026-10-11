@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Profile - CourseAI</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="dashboard.html"
+       class="logo">
+        🤖 CourseAI
+    </a>
+
+    <nav>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="create-course.html">
+            Create Course
+        </a>
+
+        <button class="logoutBtn">
+            Logout
+        </button>
+
+    </nav>
+
+</header>
+
+<main class="profile-page">
+
+    <div class="profile-card">
+
+        <div class="profile-avatar">
+            👤
+        </div>
+
+        <h1 id="profileName">
+            User
+        </h1>
+
+        <p id="profileEmail">
+            -
+        </p>
+
+        <span id="profileRole"
+              class="badge">
+            student
+        </span>
+
+        <hr>
+
+        <div class="profile-info">
+
+            <label>Full Name</label>
+
+            <input
+                id="fullName"
+                type="text"
+                readonly>
+
+            <label>Email</label>
+
+            <input
+                id="email"
+                type="email"
+                readonly>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/profile.js"></script>
+
+</body>
+</html>

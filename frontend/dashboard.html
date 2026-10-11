@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - CourseAI</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="dashboard.html"
+       class="logo">
+        🤖 CourseAI
+    </a>
+
+    <nav>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="create-course.html">
+            Create Course
+        </a>
+
+        <a href="profile.html">
+            Profile
+        </a>
+
+        <button class="logoutBtn">
+            Logout
+        </button>
+
+    </nav>
+
+</header>
+
+<main class="dashboard">
+
+    <section class="dashboard-header">
+
+        <div>
+
+            <p class="eyebrow">
+                YOUR LEARNING SPACE
+            </p>
+
+            <h1>
+                Welcome,
+                <span data-user-name>
+                    Student
+                </span> 👋
+            </h1>
+
+            <p>
+                Continue your AI-powered learning journey.
+            </p>
+
+        </div>
+
+        <a href="create-course.html"
+           class="primary-btn">
+            + Create New Course
+        </a>
+
+    </section>
+
+    <section class="stats-grid">
+
+        <div class="stat-card">
+            <span>📚</span>
+            <strong id="totalCourses">0</strong>
+            <p>Total Courses</p>
+        </div>
+
+        <div class="stat-card">
+            <span>✅</span>
+            <strong id="completedCourses">0</strong>
+            <p>Completed</p>
+        </div>
+
+        <div class="stat-card">
+            <span>🚀</span>
+            <strong id="inProgressCourses">0</strong>
+            <p>In Progress</p>
+        </div>
+
+        <div class="stat-card">
+            <span>📖</span>
+            <strong id="lessonsCompleted">0</strong>
+            <p>Lessons Completed</p>
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="section-heading inline-heading">
+
+            <div>
+                <span>MY COURSES</span>
+                <h2>Your Courses</h2>
+            </div>
+
+            <a href="create-course.html">
+                Create Course →
+            </a>
+
+        </div>
+
+        <div
+            id="coursesContainer"
+            class="course-grid">
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+Flask
+mysql-connector-python
+python-dotenv
+google-genai
+pydantic
+reportlab
+Werkzeug
